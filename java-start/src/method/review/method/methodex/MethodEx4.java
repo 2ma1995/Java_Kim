@@ -17,24 +17,38 @@ public class MethodEx4 {
             switch (choice) {
                 case 1:
                     System.out.println("입금액을 입력하세요: ");
-                    balance += choice;
-                    System.out.println(choice + "원을 입력하였습니다. 현재잔액:" + amount);
+                    amount = scanner.nextInt();
+                    balance = deposit(balance,amount);
                     break;
                 case 2:
                     System.out.println("출금액을 입력하세요: ");
-                    if (balance>choice){
-                    balance -= choice;
-                    System.out.println(choice + "원을 입력하였습니다. 현재잔액:" + balance);
-                    }else {
-                        System.out.println(choice+"를 출금하려했으나 잔액이 부족합니다.");
-                    }
+                    amount = scanner.nextInt();
+                    balance = withdraw(balance,amount);
                     break;
                 case 3:
-
-
+                    System.out.println("현재 잔액"+balance+" 원");
+                    break;
+                case 4:
+                    System.out.println("시스템을 종료합니다.");
+                    return;
 
             }
         }
 
     }
+    public static int deposit(int balance, int amount) {
+        balance += amount;
+        System.out.println(amount + "원을 입금하였습니다. 현재 잔액: " + balance + "원");
+        return balance;
+    }
+
+    public static int withdraw(int balance, int amount) {
+        if (balance >= amount) {
+            balance -= amount;
+            System.out.println(amount + "원을 출금하였습니다. 현재 잔액: " + balance + "원");
+        } else {
+            System.out.println(amount + "원을 출금하려 했으나 잔액이 부족합니다.");
+        }
+
+        return balance;}
 }
