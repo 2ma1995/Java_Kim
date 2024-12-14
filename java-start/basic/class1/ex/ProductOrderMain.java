@@ -24,7 +24,7 @@ public class ProductOrderMain {
             total += po.price * po.quantity;
             System.out.println("상품명: "+po.productName+", 가격: "+po.price+", 수량: "+po.quantity);
         }
-            System.out.println("촐 결제 금액 : "+total);
+            System.out.println("총 결제 금액 : "+total);
 
     }
 }
