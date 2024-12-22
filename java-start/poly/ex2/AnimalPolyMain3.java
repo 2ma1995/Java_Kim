@@ -1,13 +1,15 @@
 package poly.ex2;
 
 
-public class AnimalPolyMain2 {
+public class AnimalPolyMain3 {
     public static void main(String[] args) {
 //        Dog dog = new Dog();
 //        Cat cat = new Cat();
 //        Caw caw = new Caw();
+        Animal a = new Animal();
+        a.sound();
 //                              배열에 새로운 변수 합칠시(inline 베리어블) = ctrl+alt+N
-        Animal[] animalArr = {new Dog(), new Cat(), new Caw(),new Duck()};
+        Animal[] animalArr = {new Dog(), new Cat(), new Caw(),new Duck(),new Pig()};
 
         for (Animal animal : animalArr) {
             soundAnimal(animal);
