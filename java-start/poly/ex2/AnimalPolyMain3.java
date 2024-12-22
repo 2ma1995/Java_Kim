@@ -16,6 +16,7 @@ public class AnimalPolyMain3 {
         }
     }
 //메서드로 추출시 ctrl+alt+M
+//  변하지 않는 부분
     private static void soundAnimal(Animal animal) {
         System.out.println("동물 소리 테스트 시작");
         animal.sound();
