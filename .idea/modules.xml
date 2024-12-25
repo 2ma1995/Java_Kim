@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/java_kim.iml" filepath="$PROJECT_DIR$/.idea/java_kim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-mid1/mid1.iml" filepath="$PROJECT_DIR$/java-mid1/mid1.iml" />
     </modules>
   </component>
 </project>
