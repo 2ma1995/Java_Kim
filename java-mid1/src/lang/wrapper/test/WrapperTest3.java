@@ -1,13 +1,19 @@
 package lang.wrapper.test;
 
-public class WrapperTest2 {
+public class WrapperTest3 {
     public static void main(String[] args) {
-        String[] array = {"1.5", "2.5", "3.0"};
-        double sum = 0;
-        for (String nums : array) {
-            double i = Double.parseDouble(nums);
-            sum+=i;
-        }
-        System.out.println("sum = " + sum);
+        String str = "100";
+
+        //String -> Integer //박싱
+        Integer integer1 = Integer.valueOf(str);
+        System.out.println("integer1 = " + integer1);
+
+        //Integer -> int //언박싱
+        int intValue = integer1.intValue();
+        System.out.println("intValue = " + intValue);
+
+        //int -> Integer //박싱
+        Integer integer2 = Integer.valueOf(intValue);
+        System.out.println("integer2 = " + integer2);
     }
 }
