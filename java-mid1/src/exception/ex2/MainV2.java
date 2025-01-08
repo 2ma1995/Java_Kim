@@ -16,6 +16,8 @@ public class MainV2 {
             if (input.equals("exit")){
                 break;
             }
+            //밑에 코드가 사라지고
+            // throw new RuntimeException("ex"); 가 여기로와서 에러발생
             networkService.sendMessage(input);
             System.out.println();
         }
