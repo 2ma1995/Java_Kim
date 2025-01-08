@@ -6,8 +6,9 @@ import java.util.Scanner;
 
 public class MainV2 {
     public static void main(String[] args) throws NetworkClientExceptionV2 {
-//        NetworkServiceV2_1 networkService = new NetworkServiceV2_1();
-        NetworkServiceV2_2 networkService = new NetworkServiceV2_2();
+//        NetworkServiceV2_1 networkService = new NetworkServiceV2_1(); // throw 예외처리
+//        NetworkServiceV2_2 networkService = new NetworkServiceV2_2(); // try/catch 예외복구
+        NetworkServiceV2_3 networkService = new NetworkServiceV2_3();
         Scanner scanner = new Scanner(System.in);
         while (true){
             System.out.println("전송할 문자 : ");
