@@ -1,6 +1,6 @@
 package exception.ex2;
 
-public class NetworkServiceV2_4 {
+public class NetworkServiceV2_5 {
 
     public void sendMessage(String data) {
         String address = "http://example.com";
@@ -13,8 +13,9 @@ public class NetworkServiceV2_4 {
             // throw new RuntimeException("ex"); 가 발생
         } catch (NetworkClientExceptionV2 e) {
             System.out.println("[오류] 코드: " + e.getErrorCode() + ", 메세지: " + e.getMessage());
+        } finally {
+        client.disconnect();
         }
-//        NetworkClientException이 아닌 다른 예외가 발생해서 밖으로 던져지면 무시
-        client.disconnect(); // 위치를 여기로 잡으면, 연결해제사용가능 but //2. RuntimeException상황에서는 이코드가 호출이안됌.
+
     }
 }
