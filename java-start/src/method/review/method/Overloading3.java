@@ -4,7 +4,7 @@ package src.method.review.method;
 public class Overloading3 {
     public static void main(String[] args) {
         System.out.println("1: "+add(1,2));
-        System.out.println("1: "+add(1.2,1.5));
+        System.out.println("1: "+add(1.2, 1.5));
     }
 // 아래 코드가 없어도 형변환이 가능한경우 형변환이 되서, 실행
 //    public static int add(int a, int b) {

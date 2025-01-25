@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/java-basic/java-basic.iml" filepath="$PROJECT_DIR$/java-basic/java-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-mid2/java-mid2.iml" filepath="$PROJECT_DIR$/java-mid2/java-mid2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java_kim.iml" filepath="$PROJECT_DIR$/.idea/java_kim.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-mid1/mid1.iml" filepath="$PROJECT_DIR$/java-mid1/mid1.iml" />

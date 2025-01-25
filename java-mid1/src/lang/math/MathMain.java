@@ -13,7 +13,7 @@ public class MathMain {
 
         //기타 유용한 메서드
         System.out.println("sqrt(4): "+ Math.sqrt(4));// 제곱근
-        System.out.println("random(): "+ Math.random());//0.0 ~ 1.0 사이의 double 값
+        System.out.println("random(): "+ Math.random());//0.0 ~ afirstrepear.0 사이의 double 값
         //정밀한 값이 필요시 BigDecimal사용
 
     }
