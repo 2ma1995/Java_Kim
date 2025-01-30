@@ -1,12 +1,13 @@
 package repeat.lang.string.test;
 
-public class TestString9 {
+public class TestString10 {
     public static void main(String[] args) {
-        String email = "hello@example.com";
-        String[] parts = email.split("@");
-        String idPart = parts[0];
-        String domainPart = parts[1];
-        System.out.println("ID : " + idPart);
-        System.out.println("Domain : " + domainPart);
+        String fruits = "apple,banana,mango";
+        String[] fruit = fruits.split(",");
+        for (String string : fruit) {
+            System.out.println(string);
+        }
+        String joinedString = String.join("->", fruit);
+        System.out.println("joinedString = " + joinedString);
     }
 }

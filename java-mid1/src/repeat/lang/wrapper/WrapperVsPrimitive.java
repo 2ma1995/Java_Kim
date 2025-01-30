@@ -1,23 +1,29 @@
 package repeat.lang.wrapper;
 
-public class WrapperClassMain {
+public class WrapperVsPrimitive {
     public static void main(String[] args) {
-        Integer newInteger = new Integer(10); //미래에 삭제 예정, 대신에 valueOf()를 사용
-        Integer integerObj = Integer.valueOf(10); //-128 ~ 127 자주 사용하는 숫자 값 재사용, 불변
-        Long longObj = Long.valueOf(100);
-        Double doubleObj = Double.valueOf(10.5);
+        int iterations = 1_000_000_000; // 반복 횟수 설정, 10억
+        long startTime, endTime;
 
-        System.out.println("newInteger = " + newInteger);
-        System.out.println("integerObj = " + integerObj);
-        System.out.println("longObj = " + longObj);
-        System.out.println("doubleObj = " + doubleObj);
+        //기본형 long 사용
+        long sumPrimitive = 0;
+        startTime = System.currentTimeMillis();
+        for (int i = 0; i < iterations; i++) {
+            sumPrimitive += i;
+        }
+        endTime = System.currentTimeMillis();
+        System.out.println("sumPrimitive = " + sumPrimitive);
+        System.out.println("기본자료형 long 실행 시간: " + (endTime - startTime)+"ms");
 
-        System.out.println("내부값 읽기");
-        int intValue = integerObj.intValue();
-        System.out.println("intValue = " + intValue);
+        //래퍼 클래스 Long 사용
+        Long sumWrapper = 0L;
+        startTime = System.currentTimeMillis();
+        for (int i = 0; i < iterations; i++) {
+            sumWrapper += i; // 오토박싱 발생
+        }
+        endTime = System.currentTimeMillis();
+        System.out.println("sumWrapper = " + sumWrapper);
+        System.out.println("래퍼 클래스 Long 실행 시간: " + (endTime - startTime)+"ms");
 
-        System.out.println("비교");
-        System.out.println("==: "+(newInteger == integerObj));
-        System.out.println("equals: "+(newInteger.equals(integerObj)));
     }
 }

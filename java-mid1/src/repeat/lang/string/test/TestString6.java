@@ -1,14 +1,17 @@
 package repeat.lang.string.test;
 
-public class TestString5 {
+public class TestString6 {
     public static void main(String[] args) {
-        String str = "hello.txt";
-        String ext = ".txt";
-        int extIndex = str.indexOf(ext);
-        String filename = str.substring(0, extIndex);
-        String extName = str.substring(extIndex);
+        String str = "start hello java, hello spring, hello jpa";
+        String key = "hello";
 
-        System.out.println("filename = " + filename);
-        System.out.println("extName = " + extName);
+        int count =0;
+        int index = str.indexOf(key);
+        System.out.println("index = " + index);
+        while (index>=0){
+            index = str.indexOf(key, index + 1);
+            count++;
+        }
+        System.out.println("count = " + count);
     }
 }

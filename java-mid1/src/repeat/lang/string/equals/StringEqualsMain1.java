@@ -1,4 +1,4 @@
-package repeat.lang.string;
+package repeat.lang.string.equals;
 
 public class StringEqualsMain1 {
     public static void main(String[] args) {

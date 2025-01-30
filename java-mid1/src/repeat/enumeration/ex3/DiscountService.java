@@ -1,15 +1,15 @@
-package repeat.enumeration.ex2;
+package repeat.enumeration.ex3;
 
 
 public class DiscountService {
-    public int discount(ClassGrade classGrade, int price) {
+    public int discount(Grade grade, int price) {
         int discountPercent = 0;
 
-        if (classGrade == ClassGrade.BASIC){
+        if (grade == Grade.BASIC){
             discountPercent = 10;
-        } else if (classGrade == ClassGrade.GOLD) {
+        } else if (grade == Grade.GOLD) {
             discountPercent = 20;
-        }else if (classGrade == ClassGrade.DIAMOND) {
+        }else if (grade == Grade.DIAMOND) {
             discountPercent = 30;
         }else {
             System.out.println("할인X");

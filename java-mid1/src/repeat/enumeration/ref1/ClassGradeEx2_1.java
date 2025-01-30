@@ -1,4 +1,5 @@
-package repeat.enumeration.ex2;
+package repeat.enumeration.ref1;
+
 
 public class ClassGradeEx2_1 {
     public static void main(String[] args) {

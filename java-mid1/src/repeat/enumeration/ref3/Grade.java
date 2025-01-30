@@ -1,7 +1,7 @@
-package repeat.enumeration.ref2;
+package repeat.enumeration.ref3;
 
 public enum Grade {
-    BASIC(10),GOLD(20),DIAMOND(30);
+    BASIC(10), GOLD(20), DIAMOND(30);
 
     private final int discountPercent;
 
@@ -11,5 +11,9 @@ public enum Grade {
 
     public int getDiscountPercent() {
         return discountPercent;
+    }
+
+    public int discount(int price) {
+        return price * discountPercent / 100;
     }
 }

@@ -1,6 +1,4 @@
-package repeat.lang.string;
-
-import java.lang.reflect.ParameterizedType;
+package repeat.lang.string.equals;
 
 public class StringEqualsMain2 {
     public static void main(String[] args) {

@@ -1,22 +1,11 @@
 package repeat.lang.Immutable.change;
 
-public class MutableObj {
+public class MutableMain {
+    public static void main(String[] args) {
+        MutableObj obj = new MutableObj(10);
+        obj.add(20);
 
-    private int value;
-
-    public MutableObj(int value) {
-        this.value = value;
-    }
-
-    public void add(int addValue){
-        value= value+addValue;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
+//        계산 이후의 기존 값은 사라짐
+        System.out.println("obj = " + obj.getValue());
     }
 }

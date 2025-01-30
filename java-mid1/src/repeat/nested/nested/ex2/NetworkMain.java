@@ -1,4 +1,5 @@
-package repeat.nested.nested.ex1;
+package repeat.nested.nested.ex2;
+
 
 public class NetworkMain {
     public static void main(String[] args) {

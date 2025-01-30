@@ -1,9 +1,12 @@
 package repeat.lang.string.test;
 
-public class TestString8 {
+public class TestString9 {
     public static void main(String[] args) {
-        String input = "hello java spring jpa java";
-        String replace = input.replace("java", "jvm");
-        System.out.println(replace);
+        String email = "hello@example.com";
+        String[] parts = email.split("@");
+        String idPart = parts[0];
+        String domainPart = parts[1];
+        System.out.println("ID : " + idPart);
+        System.out.println("Domain : " + domainPart);
     }
 }

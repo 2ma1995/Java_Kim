@@ -1,6 +1,7 @@
-package repeat.enumeration.ex0;
+package repeat.enumeration.ex1;
 
-public class StringGradeEx0_2 {
+
+public class StringGradeEx1_2 {
     public static void main(String[] args) {
         int price = 10000;
 

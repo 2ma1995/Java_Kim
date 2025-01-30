@@ -1,9 +1,9 @@
 package repeat.lang.string.test;
 
-public class TestString7 {
+public class TestString8 {
     public static void main(String[] args) {
-        String original = " Hello Java ";
-        String trim = original.trim();
-        System.out.println(trim);
+        String input = "hello java spring jpa java";
+        String replace = input.replace("java", "jvm");
+        System.out.println(replace);
     }
 }
