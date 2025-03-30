@@ -10,7 +10,7 @@ public class MyHashSetV0Main {
         set.add(3);
         set.add(4);
         set.add(5);
-        System.out.println( set);
+        System.out.println(set);
 
         boolean result = set.add(4);//중복 데이터 저장
         System.out.println("중복 데이터 저장 결과 = "+result);
