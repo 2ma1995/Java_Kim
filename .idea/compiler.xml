@@ -3,7 +3,12 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="basic" target="17" />
+      <module name="basic.main" target="17" />
+      <module name="basic.test" target="17" />
+      <module name="core.spring_basic1" target="17" />
       <module name="spring_basic" target="17" />
+      <module name="spring_basic.main" target="17" />
+      <module name="spring_basic.test" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
