@@ -35,9 +35,8 @@ public class MyArrayListV2 {
 //        for (int i = 0; i < elementData.length; i++) {
 //            newArr[i]=elementData[i];
 //        } // 밑의 코드가 주석처리된 코드의 기능을 대체한다.
-        Object[] newArr = Arrays.copyOf(elementData, newCapacity);
-
-        elementData = newArr;
+//          아래코드는 새로운 주소값을 참조하게 하는역할
+        elementData = Arrays.copyOf(elementData, newCapacity);
     }
 
     public Object get(int index) {
@@ -60,6 +59,7 @@ public class MyArrayListV2 {
     }
 
     public String toString() {
+//        IDE toString = Node{item=A, next=Node{item=B, next=Node{item=C, next=null}}} 이렇게 출력
 //        [1,2,3,null,null] // size = 3;
 //        [1,2,3] // size=3
         return Arrays.toString(Arrays.copyOf(elementData, size)) + " size=" + size + ", capacity=" + elementData.length;

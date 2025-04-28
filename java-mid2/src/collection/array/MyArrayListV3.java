@@ -30,11 +30,12 @@ public class MyArrayListV3 {
         if (size == elementData.length){
             grow();
         }
-//        데이터 이동
+//        데이터 이동을 시키고, 데이터를 넣어야됨.
         shiftRightFrom(index);
         elementData[index] = e;
         size++;
     }
+
 //  코드추가, 요소의 마지막부터 index까지 오른쪽으로 밀기
     private void shiftRightFrom(int index) {
         for (int i = size; i>index; i--){
@@ -45,13 +46,7 @@ public class MyArrayListV3 {
     private void grow() {
         int oldCapacity = elementData.length;
         int newCapacity = oldCapacity*2;
-        //배열을 새로 만들고, 기존 배열을 새로운 배열에 복사
-//        Object[] newArr = new Object[DEFAULT_CAPACITY];
-//        for (int i = 0; i < elementData.length; i++) {
-//            newArr[i]=elementData[i];
-//        } // 밑의 코드가 주석처리된 코드의 기능을 대체한다.
         Object[] newArr = Arrays.copyOf(elementData, newCapacity);
-
         elementData = newArr;
     }
 
@@ -68,6 +63,7 @@ public class MyArrayListV3 {
 //    코드추가
     public Object remove(int index){
         Object oldValue = get(index);
+//        데이터이동을 해야됨.
         shiftLeftFrom(index);
 
         size--;

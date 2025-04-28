@@ -9,5 +9,8 @@ public class NodeMain2 {
 
         System.out.println("연결된 노드 출력");
         System.out.println(first);
+//      참고 b부터 찍고 싶을때, 예시
+        Node nodeB = first.next;
+        System.out.println(nodeB);
     }
 }

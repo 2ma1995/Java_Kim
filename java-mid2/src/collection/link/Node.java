@@ -8,6 +8,7 @@ public class Node {
     public Node(Object item){
         this.item=item;
     }
+
 //  IDE생성 toString()
 //    @Override
 //    public String toString() {
@@ -16,10 +17,10 @@ public class Node {
 //                ", next=" + next +
 //                '}';
 //    }
-
 //  [A->B->C]
     @Override
     public String toString() {
+        // loop 에서 문자를 더할때는, StringBuilder
         StringBuilder sb = new StringBuilder();
         Node x = this;
         sb.append("[");

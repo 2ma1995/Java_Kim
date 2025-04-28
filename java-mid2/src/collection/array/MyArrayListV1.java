@@ -46,6 +46,8 @@ public class MyArrayListV1 {
     public String toString() {
 //        [1,2,3,null,null] // size = 3;
 //        [1,2,3] // size=3
-        return Arrays.toString(Arrays.copyOf(elementData, size)) + " size=" + size + ", capacity=" + elementData.length;
+//        Arrays.copyOf(elementData, size) elementData는 기존배열, size는 새로운길이를 뜻함, 내장메서드
+        return Arrays.toString(Arrays.copyOf(elementData, size)) + 
+        " size=" + size + ", capacity=" + elementData.length;
     }
 }
